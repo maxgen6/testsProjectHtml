@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -30,13 +31,26 @@
                     <a href="#"><img src="" alt="link"></a>
                 </div>
                 <div class="header__content-slider">
-                    <div class="slider">
-                        <img src="" alt="">
+                    <div class="slider active">
+                        <img src="https://pbs.twimg.com/media/DhtLYhgVQAAxJFB.jpg" alt="">
                         <div class="dots">
-                            <span>left</span>
-                            <span>right</span>
+                            <span class="left">&#8592;</span>
+                            <span class="right">&#8594;</span>
                         </div>
-                        <p class="counter">1/8</p>
+                    </div>
+                    <div class="slider">
+                        <img src="https://pbs.twimg.com/media/DhtLYhgVQAAxJFB.jpg" alt="">
+                        <div class="dots">
+                            <span class="left">&#8592;</span>
+                            <span class="right">&#8594;</span>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <img src="https://pbs.twimg.com/media/DhtLYhgVQAAxJFB.jpg" alt="">
+                        <div class="dots">
+                            <span class="left">&#8592;</span>
+                            <span class="right">&#8594;</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,14 +167,55 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form-section">
         <div class="container">
+            
             <div class="form__blocks">
                 <div class="form__block">
-                    <form action=""></form>
+                    <form >
+                        <div class="section__link">
+                            <a href="#" class="section__link-number">03</a>
+                            <a href="#" class="line"></a>
+                            <a href="#" class="section__link-text">Оставить заявку</a>
+                        </div>
+                        <h2>Мы свяжемся с вами</h2>
+                        <div class="first-block">
+                            <div class="select">
+                                <label for="names">Обращение</label>
+                                <select id="names">
+                                    <option value="Мистер">Мистер</option>
+                                    <option value="Мисс">Мисс</option>
+
+                                </select>
+                            </div>
+                            <div class="name">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" placeholder="Джон">
+                            </div>
+                            <div class="name">
+                                <label for="lastname">Фамилия</label>
+                                <input type="text" id="lastname" placeholder="Смит">
+                            </div>
+                        </div>
+                        <div class="second-block">
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="johnsmith@gmail.com">
+                        </div>
+                        <div class="second-block">
+                            <label for="email">Телефон</label>
+                            <input type="tel" placeholder="+7 999 999-99-99" />
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check1" name="check" value="check1">
+                            <label for="check1">Согласие на обработку персональных данных</label>
+                            <input type="checkbox" id="check2" name="check" value="check2">
+                            <label for="check2">Подписка на рассылку</label>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
                 </div>
                 <div class="form__img">
-                    <img src="" alt="">
+                    <img src="./img/form-img.png" alt="img">
                 </div>
             </div>
         </div>
@@ -175,6 +230,6 @@
             <li>text</li>
         </ul>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
